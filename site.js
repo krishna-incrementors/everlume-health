@@ -10,7 +10,7 @@
     });
     document.querySelectorAll('.has-menu > a').forEach(function(a){
       a.addEventListener('click', function(e){
-        if (window.innerWidth <= 1020) { e.preventDefault(); a.parentElement.classList.toggle('expand'); }
+        if (window.innerWidth <= 1180) { e.preventDefault(); a.parentElement.classList.toggle('expand'); }
       });
     });
   }
