@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample of the production sitemap. Rank Math / Yoast generates this per post type at launch. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.everlumehealth.com/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/symptoms/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/symptoms/hormones-energy/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/symptoms/menstrual-problems/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/symptoms/pelvic-symptoms/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/symptoms/pregnancy-symptoms/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/symptoms/digestive-metabolic/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/symptoms/emotional-wellness/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/life-stages/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/conditions/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/conditions/perimenopause/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/conditions/menopause/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/solutions/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/solutions/hormone-therapy/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/solutions/womens-wellness/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/solutions/lifestyle-medicine/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/prevention/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/learning-center/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/patient-guide/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/about/our-story/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/about/meet-the-team/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/about/testimonials/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/locations/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/locations/farmington-ut/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/locations/layton-ut/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/locations/bountiful-ut/</loc><lastmod>2026-10-28</lastmod></url>
+  <url><loc>https://www.everlumehealth.com/locations/kaysville-ut/</loc><lastmod>2026-10-28</lastmod></url>
+</urlset>

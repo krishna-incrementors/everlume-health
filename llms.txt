@@ -1,0 +1,20 @@
+# Everlume Health
+
+> Evidence-based women's health clinic in Farmington, Utah, with two providers. We publish clinician-reviewed education on symptoms, conditions, life stages, hormone therapy and prevention for women in Davis County and Northern Utah.
+
+Clinic: Farmington, UT 84025. Virtual visits for many concerns across Utah. Free 15-minute virtual consultation.
+All medical content lists an author, a medical reviewer and a last-reviewed date, and cites sources such as ACOG, The Menopause Society, USPSTF and NIH.
+
+## Core sections
+- [Symptoms](https://www.everlumehealth.com/symptoms/): what a symptom can mean, related conditions, when to seek care
+- [Conditions](https://www.everlumehealth.com/conditions/): plain-language condition library with evaluation and treatment options
+- [Life Stages](https://www.everlumehealth.com/life-stages/): health needs from college to care after 60
+- [Solutions](https://www.everlumehealth.com/solutions/): hormone therapy, women's wellness, lifestyle medicine
+- [Prevention](https://www.everlumehealth.com/prevention/): screenings and risk reduction
+- [Patient Guide](https://www.everlumehealth.com/patient-guide/): question-based guidance on when to see a provider
+- [Learning Center](https://www.everlumehealth.com/learning-center/): articles and medical updates
+
+## Key pages
+- [Perimenopause](https://www.everlumehealth.com/conditions/perimenopause/)
+- [Farmington clinic](https://www.everlumehealth.com/locations/farmington-ut/)
+- [Meet the Team](https://www.everlumehealth.com/about/meet-the-team/)

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Site Blueprint | Everlume Health WordPress Plan</title>
+<meta name="description" content="WordPress architecture, URL structure, templates, plugin stack and SEO plan for the Everlume Health website.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<style>
+.bp-hero{background:var(--night);color:#e9efee;padding:70px 0 40px}
+.bp-hero .eyebrow{color:var(--dawn)}
+.bp-hero .lede{color:#b9cac8}
+.bp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.bp-card{background:var(--paper);border-radius:30px;padding:28px 30px;border:1px solid var(--line)}
+.bp-card h3{font-size:1.35rem}
+.bp-card code,.tree code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.85rem;background:var(--sand);padding:2px 7px;border-radius:6px;color:var(--lake)}
+.tree{list-style:none;padding:0;margin:0;font-size:.95rem}
+.tree li{padding:7px 0;border-bottom:1px dashed var(--line);display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.tree li b{font-weight:700}
+.stack{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.stack div{background:var(--sand);border-radius:22px;padding:20px 22px}
+.stack h4{font-family:var(--sans);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dusk);margin:0 0 6px}
+.stack p{margin:0;font-size:.95rem}
+.stack b{display:block;font-size:1.08rem;margin-bottom:4px}
+.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-weight:700;margin:6px 0 4px}
+.flow span{background:var(--haze);border-radius:999px;padding:8px 16px}
+.flow i{font-style:normal;color:var(--gold-deep)}
+.check{list-style:none;padding:0;margin:0;columns:2;column-gap:28px}
+.check li{padding:5px 0 5px 28px;position:relative;break-inside:avoid;font-size:.96rem}
+.check li::before{content:"";position:absolute;left:0;top:11px;width:14px;height:14px;border-radius:50%;background:var(--sage-soft);box-shadow:inset 0 0 0 4px var(--lake)}
+@media (max-width:900px){.bp-grid,.stack{grid-template-columns:1fr}.check{columns:1}}
+</style>
+</head>
+<body>
+<div class="mock-ribbon">Everlume Health proposal blueprint. Prepared for discussion, all items are adjustable.</div>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="index.html" aria-label="Back to the homepage mock-up">
+    <svg width="44" height="44" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="20" fill="#17323a"/><circle cx="32" cy="38" r="13" fill="#eaa23a"/><path d="M8 45c8-5 16 5 24 0s16-5 24 0" stroke="#fffdf9" stroke-width="3.5" fill="none" stroke-linecap="round"/><path d="M8 53c8-5 16 5 24 0s16-5 24 0" stroke="#8d7bb2" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+    <span class="brand-name">Everlume<small>Site blueprint</small></span>
+  </a>
+  <a class="btn btn-ghost" href="index.html" style="margin-left:auto">View homepage mock-up</a>
+</div></header>
+
+<main>
+<section class="bp-hero">
+  <div class="wrap">
+    <p class="eyebrow">WordPress architecture</p>
+    <h1 style="font-size:clamp(2.2rem,4.5vw,3.6rem)">How the site grows to hundreds of pages without a redesign</h1>
+    <p class="lede">Every content type gets its own template, fields and URL pattern. Pages link to each other automatically through shared topics, so a new article instantly shows up on the right symptom, condition and life-stage pages.</p>
+    <div class="flow" style="margin-top:26px"><span>Symptom</span><i>→</i><span>Condition</span><i>→</i><span>Solution</span><i>→</i><span>Prevention</span><i>→</i><span>Article / Patient guide</span><i>→</i><span style="background:var(--gold);color:var(--night)">Free 15-min consult</span></div>
+  </div>
+</section>
+<div class="wave-wrap bg-sand" aria-hidden="true"><svg class="wave" viewBox="0 0 1440 90" preserveAspectRatio="none" style="transform:scaleY(-1)"><path d="M0,50 C300,90 620,10 920,46 C1160,76 1320,34 1440,44 L1440,90 L0,90Z" style="fill:var(--night)"/></svg></div>
+
+<section class="section bg-sand" style="padding-top:40px">
+  <div class="wrap">
+    <div class="bp-grid">
+      <div class="bp-card">
+        <p class="eyebrow">URL structure</p>
+        <h3>Clean, shallow, predictable</h3>
+        <ul class="tree">
+          <li><b>Symptoms</b><code>/symptoms/hormones-energy/hot-flashes/</code></li>
+          <li><b>Conditions</b><code>/conditions/perimenopause/</code></li>
+          <li><b>Life stages</b><code>/life-stages/your-40s/</code></li>
+          <li><b>Solutions</b><code>/solutions/hormone-therapy/is-hrt-safe/</code></li>
+          <li><b>Prevention</b><code>/prevention/cervical-cancer-screening/</code></li>
+          <li><b>Patient guide</b><code>/patient-guide/is-my-period-normal/</code></li>
+          <li><b>Learning center</b><code>/learning-center/post-name/</code></li>
+          <li><b>Providers</b><code>/about/meet-the-team/name/</code></li>
+          <li><b>Locations</b><code>/locations/layton-ut/</code></li>
+        </ul>
+      </div>
+      <div class="bp-card">
+        <p class="eyebrow">Navigation</p>
+        <h3>Seven menus, no dead ends</h3>
+        <p>Desktop uses grouped mega menus (Life Stages split into Early years, Midlife and Thriving later; Conditions split into Hormonal, Metabolic and heart, Pelvic and bone). Learning Center and Patient Guide share one "Learn" menu to keep the bar short.</p>
+        <p>Mobile uses an accordion menu plus a sticky bottom bar with "Free 15-min consult" and "Call". Location pages live in the footer and on the Farmington page, not in the main bar.</p>
+        <p style="margin:0">Breadcrumbs on every inner page, mirrored in BreadcrumbList schema.</p>
+      </div>
+      <div class="bp-card">
+        <p class="eyebrow">Templates</p>
+        <h3>10 reusable templates</h3>
+        <ul class="check" style="columns:1">
+          <li>Homepage (custom, block-based sections)</li>
+          <li>Category landing (symptom, condition and solution hubs)</li>
+          <li>Symptom, Condition, Treatment or service</li>
+          <li>Life stage, Prevention</li>
+          <li>Article and Patient guide (author, reviewer, dates, sources)</li>
+          <li>Provider profile, Location landing page</li>
+        </ul>
+        <p style="margin-top:12px">Each has editable title, URL, H1, hero image, FAQs, related links, provider reference, CTA and full SEO fields.</p>
+      </div>
+      <div class="bp-card">
+        <p class="eyebrow">Content model</p>
+        <h3>Structured, not copy and paste</h3>
+        <p>Custom post types for symptoms, conditions, solutions, life stages, prevention, patient guide, providers and locations. A shared "Topic" taxonomy connects them, so related content blocks fill themselves in.</p>
+        <p style="margin:0">Fields for medical reviewer, last-reviewed date and sources make E-E-A-T signals impossible to forget. Editors simply fill the form.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-paper">
+  <div class="wrap">
+    <div class="section-head"><div><p class="eyebrow">Recommended stack</p><h2>Lean, fast and easy to edit</h2><p class="lede">Built on Kinsta, as planned. Fewer plugins means faster pages and fewer security updates.</p></div></div>
+    <div class="stack">
+      <div><h4>Theme</h4><b>Custom block theme</b><p>Lightweight theme built on the native block editor, with locked brand patterns so pages stay on brand.</p></div>
+      <div><h4>Editor</h4><b>Gutenberg + ACF Pro</b><p>No heavy page builder. ACF Pro handles reviewer, FAQ, related links and location fields.</p></div>
+      <div><h4>SEO</h4><b>Rank Math Pro</b><p>Per-page titles, meta, canonical, robots, Open Graph, schema templates, XML sitemaps, redirects and local SEO.</p></div>
+      <div><h4>Speed</h4><b>Kinsta cache + CDN, Perfmatters</b><p>Server-level caching, edge CDN, image optimization, and script control per page.</p></div>
+      <div><h4>Forms</h4><b>HIPAA-ready form provider</b><p>Contact forms collect name, email and phone only, with Cloudflare Turnstile for spam. Health details stay out of forms.</p></div>
+      <div><h4>Booking</h4><b>Your scheduler, linked or embedded</b><p>Works with Jane, Healthie, IntakeQ or similar. CTA buttons pass UTM data, and GA4 records the click, never the reason for the visit.</p></div>
+      <div><h4>Analytics</h4><b>GA4 + Search Console</b><p>Consent mode, no tracking on booking or intake screens, and conversion events for consult clicks, calls and form submits.</p></div>
+      <div><h4>Security</h4><b>Kinsta + Wordfence login rules</b><p>2FA, least-privilege roles (Editor, Medical Reviewer, Admin), daily backups, documented updates.</p></div>
+      <div><h4>AI search (GEO)</h4><b>llms.txt + answer-first layout</b><p>"The short answer" summaries, FAQ schema, named reviewers and cited sources give AI tools clean facts to quote.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-haze">
+  <div class="wrap">
+    <div class="section-head"><div><p class="eyebrow">Technical SEO checklist</p><h2>Built in from day one</h2></div><a class="btn btn-gold" href="perimenopause.html">See a condition page</a></div>
+    <ul class="check">
+      <li>MedicalClinic, Physician, BreadcrumbList, FAQPage and MedicalWebPage schema</li>
+      <li>One H1 per page with a clean heading hierarchy</li>
+      <li>Editable SEO title, meta description, canonical and robots on every page</li>
+      <li>XML sitemaps per content type, robots.txt, HTTPS and 301 redirects</li>
+      <li>Breadcrumbs and contextual internal links on every template</li>
+      <li>FAQ section with schema on every page</li>
+      <li>Author, medical reviewer, published and updated dates on all health content</li>
+      <li>WebP and AVIF images with lazy loading and set dimensions</li>
+      <li>Core Web Vitals target: LCP under 2.5s, CLS under 0.1 on mobile</li>
+      <li>WCAG 2.2 AA color contrast, keyboard navigation and focus states</li>
+      <li>Pre-launch crawl for broken links, duplicate URLs, stray noindex and canonical errors</li>
+      <li>Location pages with unique local content, never a city-name swap</li>
+    </ul>
+  </div>
+</section>
+</main>
+<footer class="site-footer"><div class="wrap"><div class="foot-bottom" style="margin-top:0;border-top:0"><span>Everlume Health website proposal blueprint</span><span><a href="index.html">Homepage mock-up</a> · <a href="perimenopause.html">Condition template</a> · <a href="farmington-ut.html">Location template</a></span></div></div></footer>
+</body>
+</html>

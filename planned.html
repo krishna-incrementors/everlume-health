@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Planned Page | Everlume Health</title>
+<meta name="robots" content="noindex, nofollow">
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<div class="mock-ribbon">Design mock-up for Everlume Health.</div>
+<main class="hero" style="min-height:80vh;display:grid;place-items:center">
+  <div class="wrap" style="display:block;max-width:760px;text-align:center;padding-top:80px;padding-bottom:80px">
+    <p class="eyebrow" style="justify-content:center">Planned page</p>
+    <h1 style="font-size:clamp(2rem,4.4vw,3.2rem)">This page is part of the site plan</h1>
+    <p class="lede" style="margin:0 auto 18px">It will be built from the <b id="tpl">matching</b> template, at this clean URL:</p>
+    <p><code id="url" style="font-size:1.05rem;background:var(--paper);padding:8px 16px;border-radius:999px;color:var(--lake)"></code></p>
+    <p style="margin-top:30px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a class="btn btn-gold" href="perimenopause.html">See the condition template</a>
+      <a class="btn btn-ghost" href="index.html">Back to homepage</a>
+    </p>
+  </div>
+</main>
+<script>
+var u = new URLSearchParams(location.search).get('u') || location.pathname.replace(/^\/everlume-health\//,'');
+document.getElementById('url').textContent = 'everlumehealth.com/' + u;
+var t = {symptoms:'Symptom',conditions:'Condition','life-stages':'Life stage',solutions:'Treatment and service',prevention:'Prevention','learning-center':'Article','patient-guide':'Patient guide',locations:'Location landing',about:'About and provider profile'};
+document.getElementById('tpl').textContent = (t[u.split('/')[0]] || 'matching') + (t[u.split('/')[0]] ? ' page' : '');
+</script>
+</body>
+</html>
