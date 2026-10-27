@@ -61,6 +61,7 @@
       "@type": "Physician",
       "@id": "https://www.everlumehealth.com/about/meet-the-team/natalie-brooks/#person",
       "name": "Natalie Brooks, MD",
+      "image": "https://www.everlumehealth.com/images/natalie-brooks.jpg",
       "medicalSpecialty": "Gynecologic",
       "worksFor": {"@id":"https://www.everlumehealth.com/#clinic"},
       "url": "https://www.everlumehealth.com/about/meet-the-team/natalie-brooks/"
@@ -69,6 +70,7 @@
       "@type": "Person",
       "@id": "https://www.everlumehealth.com/about/meet-the-team/jenna-whitaker/#person",
       "name": "Jenna Whitaker, FNP-C",
+      "image": "https://www.everlumehealth.com/images/jenna-whitaker.jpg",
       "jobTitle": "Family Nurse Practitioner",
       "worksFor": {"@id":"https://www.everlumehealth.com/#clinic"},
       "url": "https://www.everlumehealth.com/about/meet-the-team/jenna-whitaker/"
@@ -203,33 +205,18 @@
       </form>
     </div>
 
-    <div class="hero-art" aria-hidden="true">
-      <svg viewBox="0 0 520 600">
-        <defs>
-          <clipPath id="arch"><path d="M0,260 A260,260 0 0 1 520,260 L520,600 L0,600 Z"/></clipPath>
-          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9cdea"/><stop offset=".45" stop-color="#f6cfb2"/><stop offset=".75" stop-color="#f8e3cf"/></linearGradient>
-          <linearGradient id="lakeG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3f7880"/><stop offset="1" stop-color="#2c5a61"/></linearGradient>
-        </defs>
-        <g clip-path="url(#arch)">
-          <rect width="520" height="600" fill="url(#sky)"/>
-          <g fill="none" stroke="#fffdf9" stroke-opacity=".55">
-            <circle cx="320" cy="300" r="96"/><circle cx="320" cy="300" r="140" stroke-opacity=".35"/><circle cx="320" cy="300" r="190" stroke-opacity=".2"/>
-          </g>
-          <circle cx="320" cy="300" r="62" fill="#eaa23a"/>
-          <path d="M0,330 L50,300 L95,318 L150,262 L205,306 L262,248 L318,298 L372,252 L430,292 L480,262 L520,280 L520,600 L0,600Z" fill="#c9bddf"/>
-          <path d="M0,372 L46,344 L112,366 L178,318 L240,358 L306,312 L366,348 L436,316 L520,346 L520,600 L0,600Z" fill="#8d7bb2" fill-opacity=".75"/>
-          <path d="M0,420 C70,392 140,414 210,398 C290,380 360,414 430,394 C470,384 500,388 520,386 L520,600 L0,600Z" fill="#2c5a61"/>
-          <rect x="0" y="452" width="520" height="160" fill="url(#lakeG)"/>
-          <g stroke="#f3b48c" stroke-linecap="round" stroke-width="3" opacity=".85">
-            <path d="M282 470 h76"/><path d="M296 486 h48" opacity=".7"/><path d="M306 500 h28" opacity=".5"/>
-          </g>
-          <g fill="none" stroke="#fffdf9" stroke-opacity=".3" stroke-width="1.2">
-            <path d="M0,520 C80,505 160,535 260,520 S440,505 520,520"/><path d="M0,545 C90,530 170,560 260,545 S430,530 520,545"/>
-          </g>
-          <path d="M0,560 C100,532 200,578 300,556 C390,536 460,548 520,540 L520,600 L0,600Z" fill="#a9baa1"/>
-        </g>
-        <path d="M2,600 L2,260 A258,258 0 0 1 518,260 L518,600" fill="none" stroke="#17323a" stroke-opacity=".18" stroke-width="2"/>
-      </svg>
+    <div class="hero-art">
+      <span class="arch-line" aria-hidden="true"></span>
+      <div class="arch">
+        <img src="hero.jpg" alt="Smiling woman in her forties relaxing outdoors in warm evening light" width="520" height="600" fetchpriority="high">
+        <svg class="arch-overlay" viewBox="0 0 520 600" preserveAspectRatio="none" aria-hidden="true">
+          <defs><linearGradient id="archFade" x1="0" y1="0" x2="0" y2="1"><stop offset=".55" stop-color="#17323a" stop-opacity="0"/><stop offset="1" stop-color="#17323a" stop-opacity=".5"/></linearGradient></defs>
+          <rect width="520" height="600" fill="url(#archFade)"/>
+          <g fill="none" stroke="#fffdf9" stroke-width="1.5"><path d="M0,520 C90,500 170,540 260,522 S430,500 520,518" stroke-opacity=".6"/><path d="M0,546 C90,528 170,566 260,548 S430,528 520,544" stroke-opacity=".35"/></g>
+          <path d="M0,566 C110,540 210,590 310,568 C400,550 470,560 520,554 L520,600 L0,600Z" fill="#a9baa1" fill-opacity=".92"/>
+        </svg>
+      </div>
+      <span class="sun-dot" aria-hidden="true"></span>
       <div class="float-chip chip-a"><i>✓</i>Every article reviewed by a clinician</div>
       <div class="float-chip chip-b"><i>☾</i>Hormone therapy, explained honestly</div>
     </div>
@@ -361,12 +348,15 @@
       <p class="lede" style="margin-top:26px">We practice evidence-based medicine and explain it in words that make sense. Then we lay out every reasonable option so the decision stays yours.</p>
       <a class="btn btn-ghost" href="planned.html?u=about/our-story/">Read our story</a>
     </div>
-    <ol class="steps reveal">
+    <div class="reveal">
+    <img class="consult-photo" src="consult.jpg" alt="A women's health provider listening to a patient during a clinic visit" width="1000" height="760" loading="lazy">
+    <ol class="steps">
       <li><div><h3>We hear the whole story</h3><p>Longer visits give us time to ask about sleep, stress, cycles and family history, not just the symptom you came in with.</p></div></li>
       <li><div><h3>We explain the evidence</h3><p>You'll know what the research says, what it doesn't, and why we're recommending a test or treatment.</p></div></li>
       <li><div><h3>You choose the path</h3><p>Hormonal, non-hormonal and lifestyle options are laid out side by side, with honest benefits and risks.</p></div></li>
       <li><div><h3>We stay with you</h3><p>Follow-ups to see what's working, adjust what isn't, and keep your plan current as your body changes.</p></div></li>
     </ol>
+    </div>
   </div>
 </section>
 
@@ -383,7 +373,7 @@
     </div>
     <div class="providers">
       <article class="provider reveal">
-        <div class="portrait" style="background:linear-gradient(170deg,#f6cfb2,#f3b48c)"><svg viewBox="0 0 170 212" aria-hidden="true"><circle cx="85" cy="86" r="34" fill="#17323a" fill-opacity=".85"/><path d="M20 212c4-48 32-74 65-74s61 26 65 74z" fill="#2c5a61"/></svg></div>
+        <div class="portrait" style="background:linear-gradient(170deg,#f6cfb2,#f3b48c)"><img src="provider-brooks.jpg" alt="Dr. Natalie Brooks, OB-GYN at Everlume Health in Farmington" width="220" height="275" loading="lazy"></div>
         <div>
           <p class="creds">MD, FACOG · Board-certified OB-GYN</p>
           <h3>Dr. Natalie Brooks</h3>
@@ -393,7 +383,7 @@
         </div>
       </article>
       <article class="provider reveal">
-        <div class="portrait" style="background:linear-gradient(170deg,#d9cdea,#a9baa1)"><svg viewBox="0 0 170 212" aria-hidden="true"><circle cx="85" cy="86" r="34" fill="#17323a" fill-opacity=".85"/><path d="M20 212c4-48 32-74 65-74s61 26 65 74z" fill="#8d7bb2"/></svg></div>
+        <div class="portrait" style="background:linear-gradient(170deg,#d9cdea,#a9baa1)"><img src="provider-whitaker.jpg" alt="Jenna Whitaker, family nurse practitioner at Everlume Health" width="220" height="275" loading="lazy"></div>
         <div>
           <p class="creds">FNP-C, MSCP · Menopause Society Certified</p>
           <h3>Jenna Whitaker</h3>
@@ -477,17 +467,17 @@
     </div>
     <div class="articles">
       <a class="article reveal" href="planned.html?u=learning-center/hrt-breast-cancer-risk-explained/">
-        <div class="thumb"><svg viewBox="0 0 400 275" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" aria-hidden="true"><rect width="400" height="275" fill="#f6cfb2"/><circle cx="290" cy="120" r="70" fill="#eaa23a"/><path d="M0 200 C100 160 200 230 400 180 V275 H0Z" fill="#2c5a61"/><path d="M0 230 C120 200 240 260 400 220" stroke="#fffdf9" stroke-opacity=".5" fill="none"/></svg></div>
+        <div class="thumb"><img src="art-hrt.jpg" alt="Smiling woman in her sixties at home" width="800" height="550" loading="lazy"></div>
         <div class="body"><span class="cat">Hormone therapy</span><h3>What the newest research says about HRT and breast cancer risk</h3>
           <div class="byline"><span>By <b>Dr. Natalie Brooks</b>, MD, FACOG</span><span class="reveal-none"><span class="reviewed">✓ Medically reviewed</span> · Updated Oct 2026</span></div></div>
       </a>
       <a class="article reveal" href="planned.html?u=learning-center/perimenopause-symptoms-checklist/">
-        <div class="thumb"><svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" aria-hidden="true"><rect width="400" height="250" fill="#efe9f4"/><g fill="none" stroke="#8d7bb2" stroke-width="2"><circle cx="200" cy="125" r="40"/><circle cx="200" cy="125" r="70" stroke-opacity=".6"/><circle cx="200" cy="125" r="100" stroke-opacity=".3"/></g><circle cx="200" cy="125" r="16" fill="#eaa23a"/></svg></div>
+        <div class="thumb"><img src="art-peri.jpg" alt="Smiling woman in her forties" width="640" height="400" loading="lazy"></div>
         <div class="body"><span class="cat">Perimenopause</span><h3>34 symptoms of perimenopause, and which ones need a visit</h3>
           <div class="byline"><span>By <b>Jenna Whitaker</b>, FNP-C, MSCP</span><span><span class="reviewed">✓ Medically reviewed</span> · Updated Sep 2026</span></div></div>
       </a>
       <a class="article reveal" href="planned.html?u=learning-center/iron-deficiency-without-anemia/">
-        <div class="thumb"><svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" aria-hidden="true"><rect width="400" height="250" fill="#e6ede2"/><path d="M200 50c30 45 52 68 52 98a52 52 0 01-104 0c0-30 22-53 52-98z" fill="#a9baa1"/><path d="M0 210 C120 180 260 240 400 200 V250 H0Z" fill="#17323a" fill-opacity=".85"/></svg></div>
+        <div class="thumb"><img src="art-iron.jpg" alt="Woman smiling in a park on a sunny day" width="640" height="400" loading="lazy"></div>
         <div class="body"><span class="cat">Conditions</span><h3>Tired all the time? Iron deficiency can show up before anemia does</h3>
           <div class="byline"><span>By <b>Jenna Whitaker</b>, FNP-C, MSCP</span><span><span class="reviewed">✓ Medically reviewed</span> · Updated Aug 2026</span></div></div>
       </a>
@@ -574,6 +564,7 @@
       <p class="lede" style="color:#3c4f53">Talk with a provider by video before you commit to anything. Bring your questions. We'll tell you honestly whether a visit makes sense and what it would look like.</p>
     </div>
     <div class="book-card reveal">
+      <div class="talk-with"><img src="provider-brooks.jpg" alt="" width="46" height="46" loading="lazy"><img src="provider-whitaker.jpg" alt="" width="46" height="46" loading="lazy"><span>You'll talk with <b>Dr. Brooks</b> or <b>Jenna</b>, not a call center.</span></div>
       <h3>How it works</h3>
       <ol>
         <li>Pick a time that works for you</li>
